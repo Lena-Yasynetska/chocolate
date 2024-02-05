@@ -3,6 +3,27 @@
     --main-text-color: #111111;
     --secondary-text-color: #ffffff;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 body {
     font-family: 'Montserrat', sans-serif; 
     background: #FAFAFA;
@@ -15,7 +36,7 @@ body {
     padding-right: 15px;
     margin: 0 auto;
     outline: 2px solid red;
-
+    
 }
 .visually-hidden {
     position: absolute;
@@ -152,8 +173,7 @@ body {
     padding-left: 18px;
     padding-right: 18px;
     display: flex;
-    gap: 88px
-    ;
+    gap: 88px;
 }
 .advantages-item {
     width: calc((100%-88px*2)/3);
@@ -181,6 +201,7 @@ body {
     max-width: 411px;
     margin: 0 auto;
     margin-bottom: 28px;
+    padding: 0;
 }
 .taste-text {
     color: var(--main-text-color);
@@ -197,6 +218,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 19px;
+    padding: 0;
 }
 .taste-item {
     width: calc((100%-57px) / 4);
@@ -205,14 +227,13 @@ body {
     padding: 28px 36px 28px 28px;
 }
 .taste-img {
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
 
 }
 .taste-subtitle {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 600;
-    line-height: 1.28;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-align: left;
 }
@@ -303,8 +324,6 @@ body {
     
 }
 .loved-list {
-}
-.list {
 }
 .loved-item {
 }
