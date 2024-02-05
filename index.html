@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header class="header">
+    <div class="container header-container">
     <nav class="nav">
     <a href="" class="header-logo">
         <span class="header-logo-accent">SIMPLY</span> CHOCOLATE <img src="./images/logo-icon.svg" alt="logo icon"></a>
-        <ul class="menu list">
+        <ul class="header-menu list">
             <li class="header-item"><a class="header-link link" href="/">Home</a></li>
             <li class="header-item"><a class="header-link link" href="#made">How it’s made?</a></li>
             <li class="header-item"><a class="header-link link" href="#products">Our products</a></li>
@@ -26,16 +28,25 @@
         <li class="header-socials-item"><a class="header-socials-link" href="" aria-label="instagram" target="_blank" rel="noopener noreferrer">instagram</a></li>
         <li class="header-socials-item"><a class="header-socials-link" href="" aria-label="twiter" target="_blank" rel="noopener noreferrer">twiter</a></li>
     </ul>
+    </div>
   </header>  
     <main>
-        <section class="hero"><h1 class="hero-title">Treat yourself or a loved one to 
-            our finest ingredients for a moment 
+        <section class="hero">
+        <div class="container hero-container">
+            <!-- <div class="hero-container"> -->
+            <h1 class="hero-title">Treat yourself or a loved one to 
+            <br>our finest ingredients for a moment 
             of pure delight!</h1>
+            <div class="hero-buttons">
             <button type="button" class="hero-btn">Buy now</button>
             <a href="#made" class="hero-link link">How it’s made</a>
             <a href="#footer" class="hero-down link">scroll down</a>
+            <!-- </div> -->
+            </div>
+        </div>
         </section>
         <section class="advantages">
+        <div class="container">
             <h2 class="visually-hidden">Advantages</h2>
             <ul class="advantages-list list">
                 <li class="advantages-item">
@@ -51,8 +62,10 @@
                     <p class="advantages-item-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
                 </li>
             </ul>
+        </div>
         </section>
         <section class="taste">
+        <div class="container">
             <h2 class="taste-title section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
             <p class="taste-text">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
             <ul class="taste-list list">
@@ -73,6 +86,7 @@
                     <h3 class="taste-subtitle dark">SEMI - SWEET CHOCOLATE</h3>
                 </li>
             </ul>
+        </div>
         </section>
         <section id="made" class="made">
             <h2 class="made-title section-title">HOW IT’S <span>MADE?</span></h2>

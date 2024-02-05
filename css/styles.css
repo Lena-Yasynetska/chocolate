@@ -5,8 +5,19 @@
 }
 body {
     font-family: 'Montserrat', sans-serif; 
+    background: #FAFAFA;
+
 }
-visually-hidden {
+.container {
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+
+}
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -36,6 +47,10 @@ visually-hidden {
     color: var(--accent-color);
 }
 /* -------- HEADER ------- */
+.header {
+    padding-top: 24px;
+    padding-bottom: 32px;    
+}
 .header-logo {
     color: var(--main-text-color);
     font-size: 18px;
@@ -44,8 +59,27 @@ visually-hidden {
     letter-spacing: -0.03em;
 }
 .header-logo-accent {
-    color: #FD9222;
+    color: var(--accent-color);
     font-style: italic;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.header-menu {
+    display: flex;
+    gap: 24px;
+}
+.header-socials {
+    display: flex;
+    gap: 18px;
 }
 .header-link {
     color: var(--main-text-color);
@@ -59,7 +93,12 @@ visually-hidden {
 }
 /* -------- HERO ------- */
 .hero {
-    background-color: var(--accent-color);
+    padding-bottom: 79px;
+}
+.hero-container {
+    background-color: var(--main-text-color);
+    border-radius: 30px;
+    padding: 380px 40px 40px 40px;
 }
 .hero-title {
     color: var(--secondary-text-color);
@@ -67,17 +106,32 @@ visually-hidden {
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
 }
 .hero-btn {
     color: var(--secondary-text-color);
     font-size: 14px;
+    font-family: inherit;
     font-weight: 600;
+    background-color: var(--accent-color);
     cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: none;
+    margin-right: 14px;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
 }
 .hero-link {
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
 }
 .hero-down {
     color: var(--secondary-text-color);
@@ -85,16 +139,24 @@ visually-hidden {
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
+    display: block;
+    margin-left: auto;
 }
 /* -------- ADVANTAGES ------- */
 .advantages {
     background-color: aqua;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .advantages-list {
-}
-.list {
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    gap: 88px
+    ;
 }
 .advantages-item {
+    width: calc((100%-88px*2)/3);
 }
 .advantages-subitle {
     color: var(--secondary-text-color);
@@ -102,6 +164,7 @@ visually-hidden {
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: 0em;
+    margin-bottom: 18px;
 }
 .advantages-item-text {
     color: rgba(255, 255, 255, 0.7);
@@ -112,9 +175,12 @@ visually-hidden {
 }
 /* -------- TASTE ------- */
 .taste {
+    padding-top: 93px;
 }
 .taste-title {
-    
+    max-width: 411px;
+    margin: 0 auto;
+    margin-bottom: 28px;
 }
 .taste-text {
     color: var(--main-text-color);
@@ -123,14 +189,24 @@ visually-hidden {
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-align: center;
+    max-width: 486px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .taste-list {
-}
-.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
 }
 .taste-item {
+    width: calc((100%-57px) / 4);
+    background-repeat: 15px;
+    border: 1px solid #FD9222;
+    padding: 28px 36px 28px 28px;
 }
 .taste-img {
+    margin-bottom: 36px;
+
 }
 .taste-subtitle {
     font-family: Montserrat;
