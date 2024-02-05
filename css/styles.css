@@ -224,7 +224,7 @@ body {
     width: calc((100%-57px) / 4);
     border-radius: 15px;
     border: 1px solid #FD9222;
-    padding: 28px 18px;
+    padding: 28px 28px;
     margin-bottom: 36px;
 }
 .taste-img {
