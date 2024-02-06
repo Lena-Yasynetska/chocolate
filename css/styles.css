@@ -131,7 +131,7 @@ body {
     background-color: var(--main-text-color);
     border-radius: 30px;
     padding: 380px 40px 40px 40px;
-    background-image: url(../images/start\ page.png), linear-gradient(rgba(17, 17, 17, 0.60), rgba(17, 17, 17, 0.60));
+    background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.60)), url(../images/start\ page.png);
 }
 .hero-title {
     color: var(--secondary-text-color);
@@ -189,7 +189,17 @@ body {
     gap: 88px;
 }
 .advantages-item {
-    width: calc((100%-88px*2)/3);
+    width: calc((100% - 88px * 2) / 3);
+}
+.advantages-block {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 19px;
+}
+.advantages-icon {
+    fill: var(--accent-color);
 }
 .advantages-subitle {
     color: var(--secondary-text-color);
