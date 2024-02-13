@@ -99,10 +99,10 @@ body {
 }
 /* ----------- */
 
-.header-menu,
+/* .header-menu,
 .header-socials {
     display: none;
-}
+} */
 
 .mob-menu {
   position: fixed;
@@ -161,11 +161,11 @@ body {
 }
 /* ----------- */
 .header-menu {
-    display: flex;
+    display: none;
     gap: 24px;
 }
 .header-socials {
-    display: flex;
+    display: none;
     gap: 18px;
 }
 .header-socials-link {
