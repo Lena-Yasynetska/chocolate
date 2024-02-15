@@ -83,7 +83,6 @@ body {
     align-items: center;
 }
 .header-logo-accent {
-    /* color: var(--accent-color); */
     font-style: italic;
 }
 .header-container {
@@ -98,11 +97,6 @@ body {
     justify-content: space-between;
 }
 /* ----------- */
-
-/* .header-menu,
-.header-socials {
-    display: none;
-} */
 
 .mob-menu {
   position: fixed;
